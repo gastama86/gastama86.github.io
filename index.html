@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="estilo.css">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <!--Java-->
+    <script src="indexjs.js"></script>
+
+    <header class="hder">CURRICULUM VITAE</header>
+
+    <nav class="sidebar">
+       <button class="button"><a href="#datos1">Datos generales</a></button>
+       <button class="button"> <a href="#educ">Educación</a></button>
+       <button class="button"><a href="#exp">Experiencia laboral</a></button>
+       <button class="button"><a href="#contacto1">Contacto</a></button>
+       <button class="button"><a href="#consultas">Consultas</a></button>
+    </nav>
+
+      <main>
+        <img src="https://randomuser.me/api/portraits/men/53.jpg" alt="Error en link de imágen" class="foto" id="foto">
+        <h1 class="nombre" style="-moz-box-shadow: 4px 4px 6px 5px #642d8a;
+        -webkit-box-shadow: 4px 4px 6px 5px #642d8a;
+        box-shadow:         4px 4px 6px 5px #642d8a;">LOGAN FERNANDEZ</h1>
+
+        <button type="button" onclick="document.getElementById('datos1').style.display='block'">Datos Generales</button>
+        <div style="-moz-box-shadow: 1px 1px 3px 2px #642d8a">
+        <section id="datos1" style="display:none">
+        <ul>
+           <li><strong>Fecha de nacimiento:</strong>12/12/1990</li>
+           <li><strong>Estado civil:</strong>soltero</li>
+           <li><strong>Domicilio:</strong>Av. Rivadavia 5234 (Caballito)</li>
+           <li><strong>DNI:</strong>33.123.123</li>
+           
+        </ul>
+        </section>
+    </div>
+
+        <button type="button" onclick="document.getElementById('educ').style.display='block'">Educación</button>
+        <div style="-moz-box-shadow: 1px 1px 3px 2px #642d8a">
+        <section id="educ" style="display:none">
+            <ul>
+               <li><strong>Secundario completo:</strong> Nacional Buenos Aires</li>
+               <li><strong>Universidad de Buenos Aires:</strong> Diseño Gráfico</li>
+               <li><strong>Ticmas: </strong>curso de introducción al diseño web</li>
+            </ul>
+        </section>
+    </div>
+
+        <button type="button" onclick="document.getElementById('exp').style.display='block'">Experiencia Laboral</button>
+        <div style="-moz-box-shadow: 1px 1px 3px 2px #642d8a">
+        <section id="exp" style="display:none">
+            <ol>
+                <li>2010-2012: Hogar San Vicente Asistente geriátrico:
+                Referencia: 4367-2083.
+                </li>
+                <li>2012-2016: Cuidados domiciliarios: higiene y confort, asistencia en la administración de medicamentos, acompañamiento, coordinación de guardias.
+                </li>
+                <li>2016-2022:Cuidados hospitalarios nocturnos.
+                </li>
+            </ol>
+        </section>
+    </div>
+        
+        <button type="button" onclick="document.getElementById('contacto1').style.display='block'">Contacto</button>
+        <div style="-moz-box-shadow: 1px 1px 3px 2px #642d8a">
+        <section id="contacto1" style="display:none">
+            <ul>
+                <li><a href="https://mail.google.com/">Email: gastama86@gmail.com</a></li>
+                <li><a href="tel:+4733378901">+47 333 78 901</a></li>
+                <li><a href="ar.linkedin.com">Linkedin</a></li>
+             </ul>
+        </section>
+    </div>
+
+      </main>
+
+    <aside>
+      
+    </aside>
+
+    <footer id="consultas">
+<!--PARA DEJAR CONSULTAS-->
+<h3>Consultas</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Nombre</label>
+    <input type="text" id="fname" name="firstname" placeholder="Tu nombre es...">
+
+    <label for="lname">Apellido</label>
+    <input type="text" id="lname" name="lastname" placeholder="Tu apellido es">
+
+    <label for="country">País</label>
+    <select id="country" name="country">
+      <option value="australia">Argentina</option>
+      <option value="canada">Chile</option>
+      <option value="usa">EEUU</option>
+    </select>
+
+    <label for="subject">Consulta</label>
+    <textarea id="subject" name="subject" placeholder="Escribe tu consulta" style="height:200px"></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+       <form action="">
+
+
+       </form>
+    </footer>
+
+
+
+</body>
+</html>
